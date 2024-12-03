@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    font-family: "Roboto", serif;
+    background-color: #d63221;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 9px 37px -19px rgba(0, 0, 0, 0.72);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.info {
+    color: white;
+}
+
+.name {
+    font-size: 20px;
+}
+
+.desc {
+    font-size: 14px;
+}
