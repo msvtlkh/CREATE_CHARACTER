@@ -1,5 +1,5 @@
 import styles from './App.module.scss'
-import CharacterList from "./CharacterList/CharacterList"
+import CharacterList from './CharacterList/CharacterItem'
 import Filter from './Filter/Filter'
 import Form from './Form/Form'
 

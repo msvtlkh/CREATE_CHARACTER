@@ -1,10 +1,29 @@
+.containerList {
+    width: 500px;
+}
+
 .container {
     display: flex;
     font-family: "Roboto", serif;
-    background-color: #d63221;
     margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 5px 9px 37px -19px rgba(0, 0, 0, 0.72);
+
+    &__water {
+        background-color: #1565c0;
+    }
+
+    &__fire {
+        background-color: #d63221;
+    }
+
+    &__wind {
+        background-color: green;
+    }
+
+    &__soil {
+        background-color: grey;
+    }
 }
 
 .wrapper {

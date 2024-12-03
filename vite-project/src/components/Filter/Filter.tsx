@@ -1,7 +1,11 @@
 import { Button, ButtonGroup } from '@mui/material'
 import styles from './Filter.module.scss'
+import { useDispatch } from 'react-redux'
+import { filterCharacter, resetFilters } from '../../state/character/characterSlice'
 
 export default function Filter() {
+    const dispatch = useDispatch()
+
     return(
         <div className={styles.wrapper}>
             <p className={styles.title}>Отфильтруйте героев по элементам</p>
@@ -22,11 +26,11 @@ export default function Filter() {
                     },
                   }}
             >
-                <Button sx={{backgroundColor:'black'}}>Все</Button>
-                <Button sx={{backgroundColor:'red'}}>Огонь</Button>
-                <Button>Вода</Button>
-                <Button sx={{backgroundColor:'green'}}>Ветер</Button>
-                <Button sx={{backgroundColor:'grey'}}>Земля</Button>
+                <Button sx={{backgroundColor:'black'}} onClick={() => dispatch(resetFilters())}>Все</Button>
+                <Button sx={{backgroundColor:'red'}} onClick={() => dispatch(filterCharacter('fire'))}>Огонь</Button>
+                <Button onClick={() => dispatch(filterCharacter('water'))}>Вода</Button>
+                <Button sx={{backgroundColor:'green'}} onClick={() => dispatch(filterCharacter('wind'))}>Ветер</Button>
+                <Button sx={{backgroundColor:'grey'}} onClick={() => dispatch(filterCharacter('soil'))}>Земля</Button>
             </ButtonGroup>
         </div>
     )

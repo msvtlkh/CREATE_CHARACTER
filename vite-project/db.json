@@ -18,12 +18,5 @@
             "description": "Как аквамен, но не из DC",
             "element": "water"
         }
-    ],
-    "filters": [
-        "all",
-        "fire",
-        "water",
-        "wind",
-        "soil"
     ]
 }
